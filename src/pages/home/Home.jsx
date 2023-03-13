@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <Parallax pages={2} className='bg-main'>
+        <Parallax pages={2} className='bg-main overflow-hidden'>
             <ParallaxLayer offset={0} speed={0.25}>
                 <Container size='lg'>
                     <Grid align='center' gutter={80} className='my-8'>
