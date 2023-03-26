@@ -7,6 +7,10 @@ import Team from './shared/team/Team';
 import Login from './pages/login/Login';
 import Register from './pages/Register/Register';
 import AuthProvider from './context/AuthProvider';
+import NotFound from './pages/notFound/NotFound';
+import Blogs from './pages/blogs/Blogs';
+import Tours from './pages/Tours/Tours';
+// import ToursDetails from './pages/Tours/TourDetails';
 
 
 function App() {
@@ -24,6 +28,10 @@ function App() {
           element: <Home />
         },
         {
+          path: '/blogs',
+          element: <Blogs />
+        },
+        {
           path: '/team',
           element: <Team />
         },
@@ -38,9 +46,18 @@ function App() {
         {
           path: '/register',
           element: <Register />
-        }
+        },
+        {
+          path: 'tours',
+          element: <Tours />,
+        },
+        // {
+        //   path: 'tours/:id',
+        //   element: <TourDetails />
+        // },
       ]
-    }
+    },
+    { path: '*', element: <NotFound /> }
   ])
 
   return (

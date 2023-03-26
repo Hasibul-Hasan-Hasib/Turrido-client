@@ -3,24 +3,24 @@ import axios from 'axios'
 
 
 const useData = () => {
-    const [posts, setPosts] = useState([]);
+    const [tours, setTours] = useState([]);
     const [users, setUsers] = useState([]);
     const [bookings, setBookings] = useState([]);
     const [reviews, setReviews] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
 
-    const postUrl = `https://hourent-server.onrender.com/posts`;
-    const userUrl = `https://hourent-server.onrender.com/users`;
-    const bookingsUrl = `https://hourent-server.onrender.com/bookings`;
-    const reviewsUrl = `https://hourent-server.onrender.com/reviews`;
+    const tourUrl = `https://turrido.onrender.com/tours`;
+    const userUrl = `https://turrido.onrender.com/users`;
+    const bookingsUrl = `https://turrido.onrender.com/bookings`;
+    const reviewsUrl = `https://turrido.onrender.com/reviews`;
 
 
 
     const fetchData = async () => {
-        const postData = await axios.get(postUrl)
+        const tourData = await axios.get(tourUrl)
             .finally(() => setIsLoading(false));
-        setPosts(postData.data);
+        setTours(tourData.data);
 
         const userData = await axios.get(userUrl)
             .finally(() => setIsLoading(false));
@@ -42,7 +42,7 @@ const useData = () => {
 
 
 
-    return { users, posts, bookings, reviews, isLoading };
+    return { users, tours, bookings, reviews, isLoading };
 }
 
 export default useData;

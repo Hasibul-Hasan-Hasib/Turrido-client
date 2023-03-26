@@ -1,26 +1,23 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { Button, Container, Grid } from '@mantine/core'
 import Banner from './Banner';
-import Gallery from './Gallery';
 import CardSlide from './CardSlide';
+import Team from '../../shared/team/Team';
+import HomeVideo from './HomeVideo';
+import Contact from '../../shared/Contact/Contact';
 
 
 
 const Home = () => {
     return (
 
-        <Container size='lg'>
+        <Container size='xl'>
             <Banner />
-            <Gallery/>
-            <CardSlide/>
+            <CardSlide />
+            <HomeVideo />
+            <Team></Team>
+            <Contact />
         </Container>
-        // <div>
-        //     <Parallax pages={1} className='bg-base-100 overflow-hidden top-0 left-0' style={{display:'none'}}>
-        //         <ParallaxLayer offset={0.1} speed={0.65} >
-
-        //         </ParallaxLayer>
-        //     </Parallax>
-        // </div>
     );
 };
 

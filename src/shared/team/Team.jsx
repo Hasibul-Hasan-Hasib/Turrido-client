@@ -5,8 +5,8 @@ import styles from './Team.module.css'
 
 const Team = () => {
     return (
-        <section class="bg-white dark:bg-base-100">
-            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+        <section class="bg-white dark:bg-base-100 my-12">
+            <div class="px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
                 <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Team</h2>
                 </div>
