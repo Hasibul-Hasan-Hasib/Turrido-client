@@ -48,7 +48,7 @@ const Tours = () => {
                 <label htmlFor="my-modal-3" className="btn">open modal</label>
                 <input type="checkbox" id="my-modal-3" className="modal-toggle" />
                 <div className="modal">
-                    <div className="modal-box relative bg-primary">
+                    <div className="modal-box relative bg-gray-100">
                         <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                         <Filters></Filters>
                     </div>
@@ -60,14 +60,14 @@ const Tours = () => {
                 {
                     isLoading === false ?
                         items[0] ? items.slice(pageVisited, pageVisited + itemPerPage).map((tour) => (
-                            <div className="card card-compact bg-gray-800 shadow-xl">
+                            <Link className="card card-compact bg-gray-800 shadow-xl" to={`tours/${tour.tour_id}`}>
                                 <figure><img className='h-72' src={tour.img1} alt="Shoes" /></figure>
                                 <div className="card-body">
                                     <h1 className="card-title pl-3 text-2xl">{tour.loc}</h1>
                                     <h2 className='pl-3 text-left text-xl'>৳ {tour.price}</h2>
                                     <Rating className='pl-3' value={tour.rating} readOnly />
                                 </div>
-                            </div>
+                            </Link>
                         ))
                             :
                             <Container size='lg' mt='13rem' style={{ textAlign: 'center' }}>

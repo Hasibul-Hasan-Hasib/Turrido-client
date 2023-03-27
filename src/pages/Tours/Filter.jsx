@@ -23,7 +23,7 @@ const Filters = () => {
 
     return (
         <>
-            <h2 className='text-3xl text-base-100'>Find Your Home</h2>
+            <h2 className='text-3xl text-base-100'>Find Your Destination</h2>
             <TextInput
                 defaultValue={loc}
                 className={styles.filterItems}
@@ -36,7 +36,7 @@ const Filters = () => {
                     <Select
                         defaultValue={bed}
                         className={styles.filterItems}
-                        label="Bed Room"
+                        label="Guest"
                         placeholder="Pick one"
                         data={[
                             { value: '1', label: '1' },
@@ -51,7 +51,7 @@ const Filters = () => {
                     <Select
                         className={styles.filterItems}
                         defaultValue={bath}
-                        label="Bathroom"
+                        label="Days"
                         placeholder="Pick one"
                         data={[
                             { value: '1', label: '1' },

@@ -3,7 +3,7 @@ import React from 'react';
 const Loading = () => {
     return (
         <section class="bg-base-100 relative place-items-center grid mt-auto">
-            <div class="bg-blue-500 w-48 h-48  absolute animate-ping rounded-full delay-5s shadow-xl"></div>
+            <div class="bg-blue-500 w-48 h-48 absolute animate-ping rounded-full delay-5s shadow-xl"></div>
             <div class="bg-blue-400 w-32 h-32 absolute animate-ping rounded-full shadow-xl"></div>
             <div class="bg-white w-24 h-24 absolute animate-pulse rounded-full shadow-xl"></div>
             <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-900 filter mix-blend-overlay h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

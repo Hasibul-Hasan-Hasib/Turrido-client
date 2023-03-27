@@ -10,6 +10,8 @@ import AuthProvider from './context/AuthProvider';
 import NotFound from './pages/notFound/NotFound';
 import Blogs from './pages/blogs/Blogs';
 import Tours from './pages/Tours/Tours';
+import TourDetails from './pages/Tours/TourDetails';
+import AdminLogin from './pages/admin/AdminLogin';
 // import ToursDetails from './pages/Tours/TourDetails';
 
 
@@ -44,6 +46,10 @@ function App() {
           element: <Login />
         },
         {
+          path:'/admin-login',
+          element: <AdminLogin/>
+        },
+        {
           path: '/register',
           element: <Register />
         },
@@ -51,10 +57,10 @@ function App() {
           path: 'tours',
           element: <Tours />,
         },
-        // {
-        //   path: 'tours/:id',
-        //   element: <TourDetails />
-        // },
+        {
+          path: 'tours/:id',
+          element: <TourDetails />
+        },
       ]
     },
     { path: '*', element: <NotFound /> }
