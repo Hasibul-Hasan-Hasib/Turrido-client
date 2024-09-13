@@ -5,7 +5,7 @@ import Filters from './Filter';
 import { Badge, Container, Grid, LoadingOverlay, Pagination, Rating, SimpleGrid } from '@mantine/core';
 import { IconBath, IconBed, IconMapPin, IconRuler2 } from '@tabler/icons';
 import useData from '../../hooks/useData';
-import Loading from '../../shared/Loading/Loading';
+import Loading from '../../shared/loading/Loading';
 
 
 const Tours = () => {
@@ -74,7 +74,7 @@ const Tours = () => {
                                 <h1>Sorry No Data</h1>
                             </Container>
                         :
-                        <Loading></Loading>
+                        <Loading/>
                 }
             </SimpleGrid>
         </Container>

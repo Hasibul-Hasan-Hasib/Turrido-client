@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Auth from '../../hooks/useAuth';
-import Loading from '../../shared/Loading/Loading';
+import Loading from '../../shared/loading/Loading';
 
 
 

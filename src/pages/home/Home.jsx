@@ -4,7 +4,7 @@ import Banner from './Banner';
 import CardSlide from './CardSlide';
 import Team from '../../shared/team/Team';
 import HomeVideo from './HomeVideo';
-import Contact from '../../shared/Contact/Contact';
+import Contact from '../../shared/contact/Contact';
 
 
 

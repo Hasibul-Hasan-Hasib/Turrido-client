@@ -2,7 +2,7 @@ import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Layout from './shared/layout/Layout';
-import Contact from './shared/Contact/Contact';
+import Contact from './shared/contact/Contact';
 import Team from './shared/team/Team';
 import Login from './pages/login/Login';
 import Register from './pages/Register/Register';
