@@ -1,3 +1,4 @@
+import { Image } from '@mantine/core';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                    <img class="object-cover object-center" alt="hero" src="Backpackers-bro (1).svg"/>
+                    <Image class="object-cover object-center" w='auto' alt="hero" src="Backpackers-bro (1).svg"/>
                 </div>
             </div>
         </section>
