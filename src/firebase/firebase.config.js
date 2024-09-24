@@ -1,11 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBds6G4NFZJX9hB179ACaGZ86eguRuNMGw",
-    authDomain: "turrido-d48b2.firebaseapp.com",
-    projectId: "turrido-d48b2",
-    storageBucket: "turrido-d48b2.appspot.com",
-    messagingSenderId: "290643707967",
-    appId: "1:290643707967:web:c622322a2b8df1ef76508a",
-    measurementId: "G-S9Z2TBBNWM"
+    apiKey: import.meta.env.VITE_apiKey,
+    authDomain: import.meta.env.VITE_authDomain,
+    projectId: import.meta.env.VITE_projectId,
+    storageBucket: import.meta.env.VITE_storageBucket,
+    messagingSenderId: import.meta.env.VITE_messagingSenderId,
+    appId: import.meta.env.VITE_appId,
+    measurementId: import.meta.env.VITE_measurementId
 };
+
 
 export default firebaseConfig;
