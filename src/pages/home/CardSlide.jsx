@@ -14,15 +14,15 @@ const CardSlide = () => {
         <div className='my-24'>
             <h1 className='text-3xl text-left text-white my-8'>Explore More</h1>
             <Carousel
-                withIndicators
                 height='28rem'
                 slideSize="30%"
-                slideGap="lg"
+                slideGap="xl"
                 controlSize={40}
                 controlsOffset="xl"
+                sx={{ maxWidth: "91vw" }}
                 breakpoints={[
                     { maxWidth: 'md', slideSize: '50%' },
-                    { maxWidth: 'sm', slideSize: '100%', slideGap: 0 },
+                    { maxWidth: 'sm', slideSize: '100%', slideGap: 'sm' },
                 ]}
                 loop
                 dragFree

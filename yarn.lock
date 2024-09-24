@@ -787,42 +787,42 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@mantine/carousel@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@mantine/carousel/-/carousel-6.0.4.tgz"
-  integrity sha512-Hr7OQRJjJ7UhIUpd+iQxkZTm4P+W/JPfT0HRPkePesySpPv5RD+t808FLmSQ0CXQz809MQ9pn4xWvvZsgLQG2g==
+"@mantine/carousel@^6.0.22":
+  version "6.0.22"
+  resolved "https://registry.npmjs.org/@mantine/carousel/-/carousel-6.0.22.tgz"
+  integrity sha512-wM3K2tIAWZoi/H2t7Wo+W8st9wDzheMfln0XtvhfyBZfhrhOkQdqPNgauX/+EeNg3U7HHJJQnAJxB4R23RKr2A==
   dependencies:
-    "@mantine/utils" "6.0.4"
+    "@mantine/utils" "6.0.22"
 
-"@mantine/core@^6.0.2", "@mantine/core@6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@mantine/core/-/core-6.0.4.tgz"
-  integrity sha512-qF/zQ+BZSrfvzHB1LHEESSKLqYZaQRTgsWt26gn52fyRXtLER1PU4mIafP2C7+3+7z5guUr1ZE25pCuwx4Bbxg==
+"@mantine/core@^6.0.2", "@mantine/core@6.0.22":
+  version "6.0.22"
+  resolved "https://registry.npmjs.org/@mantine/core/-/core-6.0.22.tgz"
+  integrity sha512-6kv0eY7n565fyjgS20qUYeCSxg3f1TJ5vurzbP1HHtFXXKSY0bYoqqDoHipFCt6NxsPQGeiC6cC0c/IWIlxoKQ==
   dependencies:
     "@floating-ui/react" "^0.19.1"
-    "@mantine/styles" "6.0.4"
-    "@mantine/utils" "6.0.4"
+    "@mantine/styles" "6.0.22"
+    "@mantine/utils" "6.0.22"
     "@radix-ui/react-scroll-area" "1.0.2"
     react-remove-scroll "^2.5.5"
     react-textarea-autosize "8.3.4"
 
-"@mantine/hooks@^6.0.1", "@mantine/hooks@6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@mantine/hooks/-/hooks-6.0.4.tgz"
-  integrity sha512-rG+P18vOJcMQGo/3XAzR3f7rtmzjuccTIc10I9F2J49cRKem4wQZQdYeA8Wnxx95SRmVTQtf2hYXjbUliqgmAA==
+"@mantine/hooks@^6.0.1", "@mantine/hooks@6.0.22":
+  version "6.0.22"
+  resolved "https://registry.npmjs.org/@mantine/hooks/-/hooks-6.0.22.tgz"
+  integrity sha512-e10//QTN2sAmC4Ryeu5X5L/TsxnrjXMOaGq3dxFPIPsCSwLzyxqySfjzVViWmoPWAj0Ak9MvE2MHFjzmOpA80w==
 
-"@mantine/styles@6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@mantine/styles/-/styles-6.0.4.tgz"
-  integrity sha512-DbyshlwoCjn3Yw2iMNzo1fv+3TJcZgwjB86JvxcfjJwz6Br5IzsVlJPcK9kcTbzvcN1kMT07y5aK+3pZv7qBFw==
+"@mantine/styles@6.0.22":
+  version "6.0.22"
+  resolved "https://registry.npmjs.org/@mantine/styles/-/styles-6.0.22.tgz"
+  integrity sha512-Rud/IQp2EFYDiP4csRy2XBrho/Ct+W2/b+XbvCRTeQTmpFy/NfAKm/TWJa5zPvuv/iLTjGkVos9SHw/DteESpQ==
   dependencies:
     clsx "1.1.1"
     csstype "3.0.9"
 
-"@mantine/utils@6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@mantine/utils/-/utils-6.0.4.tgz"
-  integrity sha512-oggRX3fC/tsoxEaxJ+3DhFpb4D4YeCg5XvueGsX3AuoHY87bypaI3JyvFbSIV8oLMW6B/heHNu6VPHVSnrim9A==
+"@mantine/utils@6.0.22":
+  version "6.0.22"
+  resolved "https://registry.npmjs.org/@mantine/utils/-/utils-6.0.22.tgz"
+  integrity sha512-RSKlNZvxhMCkOFZ6slbYvZYbWjHUM+PxDQnupIOxIdsTZQQjx/BFfrfJ7kQFOP+g7MtpOds8weAetEs5obwMOQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1453,7 +1453,7 @@ embla-carousel-autoplay@^7.1.0:
   resolved "https://registry.npmjs.org/embla-carousel-autoplay/-/embla-carousel-autoplay-7.1.0.tgz"
   integrity sha512-nYfgSGn3ek44OzwO0t/Ptuxq4PNPD5l7Y9X7JjLYI/DN1uGjqxz9L73YYqR6YCRDnTYJ88s9fep48dzBnSG4vQ==
 
-embla-carousel-react@^7.0.0:
+embla-carousel-react@^7.0.0, embla-carousel-react@^7.1.0:
   version "7.1.0"
   resolved "https://registry.npmjs.org/embla-carousel-react/-/embla-carousel-react-7.1.0.tgz"
   integrity sha512-tbYRPRZSDNd2QLNqYDcArAakGIxtUbhS7tkP0dGXktXHGgcX+3ji3VrOUTOftBiujZrMV8kRxtrRUe/1soloIQ==
