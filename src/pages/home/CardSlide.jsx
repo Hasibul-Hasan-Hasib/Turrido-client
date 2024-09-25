@@ -33,7 +33,7 @@ const CardSlide = () => {
             >
                 {
                     tours.map((tour) => (
-                        <Carousel.Slide>
+                        <Carousel.Slide key={tour.tour_id}>
                             <div className="card card-compact bg-gray-800 shadow-xl">
                                 <figure><img className='h-72' src={tour.img1} alt="Shoes" /></figure>
                                 <div className="card-body">
@@ -43,7 +43,8 @@ const CardSlide = () => {
                                 </div>
                             </div>
                         </Carousel.Slide>
-                    ))
+                    )
+                    )
                 }
 
             </Carousel>

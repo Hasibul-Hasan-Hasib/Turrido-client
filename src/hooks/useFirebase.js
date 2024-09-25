@@ -6,23 +6,18 @@ import { GoogleAuthProvider, getAuth, signInWithPopup, onAuthStateChanged, signO
 initializeAuthentication();
 
 const useFirebase = () => {
-    const [user, setUser] = useState({})
-    const [error, setError] = useState('')
-    const [isLoading, setIsLoading] = useState(true)
+    const [user, setUser] = useState({});
+    const [error, setError] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
 
     const auth = getAuth();
 
+    
     const signInUsingGooglePopup = async () => {
-        try {
-            setIsLoading(true);
-            const googleProvider = new GoogleAuthProvider();
-            const result = await signInWithPopup(auth, googleProvider);
-            setIsLoading(false);
-            return result;
-        } catch (error) {
-            setIsLoading(false);
-            setError(error.message);
-        }
+        const googleProvider = new GoogleAuthProvider();
+        const result = await signInWithPopup(auth, googleProvider);
+        return result;
     }
 
 
@@ -63,6 +58,8 @@ const useFirebase = () => {
         user,
         signInUsingGooglePopup,
         error,
+        errorMessage,
+        setErrorMessage,
         setError,
         setUser,
         logOut,
