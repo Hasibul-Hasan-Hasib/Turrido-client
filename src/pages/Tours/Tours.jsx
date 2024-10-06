@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import styles from './TourDetails';
 import Filters from './Filter';
-import { Badge, Container, Grid, LoadingOverlay, Pagination, Rating, SimpleGrid } from '@mantine/core';
-import { IconBath, IconBed, IconMapPin, IconRuler2 } from '@tabler/icons';
+import { Container, Pagination, Rating, SimpleGrid } from '@mantine/core';
 import useData from '../../hooks/useData';
 import Loading from '../../shared/loading/Loading';
 
@@ -42,10 +40,10 @@ const Tours = () => {
 
 
     return (
-        <Container size='xl' className='my-24 w-screen'>
+        <Container size='xl' className='my-24 w-full'>
             <div className='mb-5 flex justify-between'>
                 <Pagination size="md" color='indigo' siblings={3} page={activePage} onChange={setPage} total={Math.ceil(items.length / itemPerPage)} />
-                <label htmlFor="my-modal-3" className="btn">open modal</label>
+                <label htmlFor="my-modal-3" className="btn">Filter</label>
                 <input type="checkbox" id="my-modal-3" className="modal-toggle" />
                 <div className="modal">
                     <div className="modal-box relative bg-gray-100">
@@ -54,29 +52,29 @@ const Tours = () => {
                     </div>
                 </div>
             </div>
-            <SimpleGrid 
-                cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 },
-                { maxWidth: 'md', cols: 2, spacing: 'md' }]}>
-                {
-                    isLoading === false ?
-                        items[0] ? items.slice(pageVisited, pageVisited + itemPerPage).map((tour) => (
-                            <Link className="card card-compact bg-gray-800 shadow-xl" to={`tours/${tour.tour_id}`}>
-                                <figure><img className='h-72' src={tour.img1} alt="Shoes" /></figure>
-                                <div className="card-body">
-                                    <h1 className="card-title pl-3 text-2xl">{tour.loc}</h1>
-                                    <h2 className='pl-3 text-left text-xl'>৳ {tour.price}</h2>
-                                    <Rating className='pl-3' value={tour.rating} readOnly />
-                                </div>
-                            </Link>
-                        ))
-                            :
-                            <Container size='lg' mt='13rem' style={{ textAlign: 'center' }}>
-                                <h1>Sorry No Data</h1>
-                            </Container>
-                        :
-                        <Loading/>
-                }
-            </SimpleGrid>
+            {
+                isLoading === true ? <div className='my-40'><Loading/></div> :
+                    <SimpleGrid
+                        cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 },
+                        { maxWidth: 'md', cols: 2, spacing: 'md' }]}>
+                        {
+                            items[0] ? items.slice(pageVisited, pageVisited + itemPerPage).map((tour) => (
+                                <Link className="card card-compact bg-gray-800 shadow-xl" to={`/tours/${tour.tour_id}`}>
+                                    <figure><img className='h-72' src={tour.img1} alt="Shoes" /></figure>
+                                    <div className="card-body">
+                                        <h1 className="card-title pl-3 text-2xl">{tour.loc}</h1>
+                                        <h2 className='pl-3 text-left text-xl'>৳ {tour.price}</h2>
+                                        <Rating className='pl-3' value={tour.rating} readOnly />
+                                    </div>
+                                </Link>
+                            ))
+                                :
+                                <Container size='lg' mt='13rem' style={{ textAlign: 'center' }}>
+                                    <h1>Sorry No Data</h1>
+                                </Container>
+                        }
+                    </SimpleGrid>
+            }
         </Container>
     );
 };

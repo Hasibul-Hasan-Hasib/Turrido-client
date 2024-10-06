@@ -1,6 +1,5 @@
 import React from 'react';
-import styles from './Tours.module.css'
-import { Button, Grid, NumberInput, Select, TextInput } from '@mantine/core';
+import { Grid, NumberInput, Select, TextInput } from '@mantine/core';
 import useFilter from '../../hooks/useFilter';
 import { Link, useSearchParams } from 'react-router-dom';
 
@@ -23,19 +22,19 @@ const Filters = () => {
 
     return (
         <>
-            <h2 className='text-3xl text-base-100'>Find Your Destination</h2>
+            <h2 className='text-3xl text-base-100 my-2'>Find Your Destination</h2>
             <TextInput
                 defaultValue={loc}
-                className={styles.filterItems}
+                className="my-2"
                 placeholder=""
                 onChange={(event) => setLoc(event.currentTarget.value)}
                 label="Location"
             />
             <Grid className='my-2'>
-                <Grid.Col span={6}>
+                <Grid.Col span={6} className='my-2'>
                     <Select
                         defaultValue={bed}
-                        className={styles.filterItems}
+                        className=""
                         label="Guest"
                         placeholder="Pick one"
                         data={[
@@ -47,9 +46,8 @@ const Filters = () => {
                         onChange={setBedRooms}
                     />
                 </Grid.Col>
-                <Grid.Col span={6}>
+                <Grid.Col className='my-2' span={6}>
                     <Select
-                        className={styles.filterItems}
                         defaultValue={bath}
                         label="Days"
                         placeholder="Pick one"
@@ -80,9 +78,7 @@ const Filters = () => {
                     />
                 </Grid.Col>
             </Grid>
-            <button
-                component={Link} to={`/properties?loc=${uloc ? uloc : ''}&bed=${bedRooms ? bedRooms : ''}&bath=${bathRooms ? bathRooms : ''}&type=${utype ? utype : ''}&upper=${uupper ? uupper : ''}&lower=${ulower ? ulower : ''}`}
-                color='cyan' className='btn btn-secondary my-2 mt-5 text-xl text-white' style={{ width: '100%' }}>Find</button>
+            <button className='btn btn-secondary btn-block my-2 mt-5 text-xl text-white'>Find</button>
         </>
     );
 };
