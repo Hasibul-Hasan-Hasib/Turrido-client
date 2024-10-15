@@ -12,7 +12,7 @@ import Blogs from './pages/blogs/Blogs';
 import Tours from './pages/Tours/Tours';
 import TourDetails from './pages/Tours/TourDetails';
 import AdminLogin from './pages/admin/AdminLogin';
-// import ToursDetails from './pages/Tours/TourDetails';
+
 
 
 function App() {

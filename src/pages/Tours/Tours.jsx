@@ -69,8 +69,8 @@ const Tours = () => {
                                 </Link>
                             ))
                                 :
-                                <Container size='lg' mt='13rem' style={{ textAlign: 'center' }}>
-                                    <h1>Sorry No Data</h1>
+                                <Container size='xl' mt='13rem'>
+                                    <h1 className='text-4xl text-center'>Sorry No Data</h1>
                                 </Container>
                         }
                     </SimpleGrid>

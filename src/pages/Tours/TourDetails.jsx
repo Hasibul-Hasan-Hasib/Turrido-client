@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Container, Grid } from '@mantine/core';
 import useData from '../../hooks/useData';
-import { Container } from '@mantine/core';
+import Description from './Description/Description';
+import Reviews from '../../components/Reviews/Reviews';
 
 
 
@@ -12,9 +14,13 @@ const TourDetails = () => {
 
 
     return (
-        <div className="py-12 text-white">
-            <Container size='xl' className='flex justify-between lg:px-12'>
-                <h1 className='md:text-4xl sm:text-3xl text-2xl text-left text-white'>Our Customer Always Come First</h1>
+        <div className="my-12 text-white">
+
+
+            {/* title */}
+
+            <Container size='xl' className='flex justify-between'>
+                <h1 className='md:text-4xl sm:text-3xl text-2xl text-left'>3 day tour on Bali Indonesia</h1>
                 <label className="swap swap-rotate">
                     <input type="checkbox" onChange={e => setChecked(e.target.checked)} />
 
@@ -35,8 +41,14 @@ const TourDetails = () => {
 
                 </label>
             </Container>
+
+
+
+
+            {/* image gallery and carousel */}
+
             <Container size='xl'>
-                <div className="mt-6 sm:px-6 md:grid md:max-w-full md:grid-cols-3 md:gap-x-8 md:px-8">
+                <div className="my-6 md:grid md:max-w-full md:grid-cols-3 md:gap-x-8">
                     <div className="aspect-w-3 aspect-h-4 hidden overflow-hidden rounded-lg lg:block">
                         <img src="https://images.pexels.com/photos/26150745/pexels-photo-26150745/free-photo-of-green-grassland-with-trees-in-countryside.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Two each of gray, white, and black shirts laying flat." className="h-full w-full object-cover object-center" />
                     </div>
@@ -93,6 +105,28 @@ const TourDetails = () => {
                 </div>
             </Container>
 
+
+
+            {/* booking information */}
+
+            <Container size='xl' className='mt-10'>
+                <Grid justify='space-between'>
+                    <Grid.Col sm={12} md={7}>
+                        <Description></Description>
+                        {/* Traveler Photo
+                        Reviews */}
+                        <Reviews></Reviews>
+                    </Grid.Col>
+                    <Grid.Col sm={12} md={4.8}>
+                        <div className='bg-gray-800 rounded-lg p-10 h-min mb-5'>
+                            <h1 className='text-3xl text-left'>$210</h1>
+                        </div>
+                        <div className='bg-gray-800 rounded-lg p-5 h-min'>
+                            <h1 className='text-3xl text-left'>$210</h1>
+                        </div>
+                    </Grid.Col>
+                </Grid>
+            </Container>
 
         </div>
     );

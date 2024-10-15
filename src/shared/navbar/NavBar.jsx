@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Container } from '@mantine/core';
 import useAuth from '../../hooks/useAuth';
@@ -21,8 +20,12 @@ const NavBar = () => {
             })
     }
 
+
+
+
+
     return (
-        <header>
+        <header className='border-b-2 border-slate-800 sticky top-0 z-10' >
             <Container size='xl'>
                 <div className="navbar bg-base-100 px-0">
                     <div className="navbar-start">
