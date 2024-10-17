@@ -131,11 +131,11 @@ const Description = () => {
                 <div className='collapse-content'>
                     <p className='leading-7'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat voluptatem commodi magnam similique repellat repellendus facere hic quisquam amet architecto, excepturi adipisci ex modi nemo eaque reiciendis accusantium! Voluptatem fugit cumque tenetur? Dolorem nihil quis voluptate perspiciatis, neque dolores beatae! Exercitationem est doloremque culpa odit animi numquam delectus veritatis voluptatibus!</p>
                     <ul className="steps steps-vertical step-primary mt-5 leading-7">
-                        <li className="step">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, animi fugiat. Architecto doloremque in tempora at dignissimos voluptatibus rem quidem.</li>
-                        <li className="step">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, animi fugiat. Architecto doloremque in tempora at dignissimos voluptatibus rem quidem.</li>
-                        <li className="step">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, animi fugiat. Architecto doloremque in tempora at dignissimos voluptatibus rem quidem.</li>
-                        <li className="step">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, animi fugiat. Architecto doloremque in tempora at dignissimos voluptatibus rem quidem.</li>
-                        <li className="step">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, animi fugiat. Architecto doloremque in tempora at dignissimos voluptatibus rem quidem.</li>
+                        <li className="step"><p className='text-left py-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente earum eveniet, numquam fuga magni maxime pariatur adipisci nisi eaque? Necessitatibus aperiam modi molestias blanditiis dolorum veniam similique, ab provident?</p></li>
+                        <li className="step"><p className='text-left py-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente earum eveniet, numquam fuga magni maxime pariatur adipisci nisi eaque? Necessitatibus aperiam modi molestias blanditiis dolorum veniam similique, ab provident?</p></li>
+                        <li className="step"><p className='text-left py-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente earum eveniet, numquam fuga magni maxime pariatur adipisci nisi eaque? Necessitatibus aperiam modi molestias blanditiis dolorum veniam similique, ab provident?</p></li>
+                        <li className="step"><p className='text-left py-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente earum eveniet, numquam fuga magni maxime pariatur adipisci nisi eaque? Necessitatibus aperiam modi molestias blanditiis dolorum veniam similique, ab provident?</p></li>
+                        <li className="step"><p className='text-left py-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente earum eveniet, numquam fuga magni maxime pariatur adipisci nisi eaque? Necessitatibus aperiam modi molestias blanditiis dolorum veniam similique, ab provident?</p></li>
                     </ul>
                 </div>
             </div>
@@ -165,24 +165,24 @@ const Description = () => {
                         <li className='flex text-xl'><IconArrowNarrowRight size={30} className='mr-2' /> 10m² cabin</li>
                         <li className='flex text-xl'><IconArrowNarrowRight size={30} className='mr-2' /> 10m² cabin</li>
                     </ul>
-                    <label htmlFor="my-modal-5" className="link text-secondary ml-1 mt-5">Read {5} More</label>
-                    <input type="checkbox" id="my-modal-5" className="modal-toggle" />
+                    <label htmlFor="my-modal-6" className="link text-secondary ml-1 mt-5">Read {5} More</label>
+                    <input type="checkbox" id="my-modal-6" className="modal-toggle" />
                     <div className="modal">
                         <div className="modal-box relative bg-gray-800">
-                            <label htmlFor="my-modal-5" className="btn btn-sm btn-circle absolute right-2 top-2">X</label>
-                            <label className='text-left text-2xl'>Whats included</label>
+                            <label htmlFor="my-modal-6" className="btn btn-sm btn-circle absolute right-2 top-2">X</label>
+                            <label className='text-left text-2xl'>Additional Info</label>
                             <div className='grid grid-cols-2'>
                                 <ul className='text-left list-inside mt-5'>
-                                    <li className='flex text-xl'><IconCheck size={30} className='mr-2' /> 10m² cabin</li>
-                                    <li className='flex text-xl'><IconCheck size={30} className='mr-2' /> 10m² cabin</li>
-                                    <li className='flex text-xl'><IconCheck size={30} className='mr-2' /> 10m² cabin</li>
-                                    <li className='flex text-xl'><IconCheck size={30} className='mr-2' /> 10m² cabin</li>
+                                    <li className='flex text-xl'><IconArrowNarrowRight size={30} className='mr-2' /> 10m² cabin</li>
+                                    <li className='flex text-xl'><IconArrowNarrowRight size={30} className='mr-2' /> 10m² cabin</li>
+                                    <li className='flex text-xl'><IconArrowNarrowRight size={30} className='mr-2' /> 10m² cabin</li>
+                                    <li className='flex text-xl'><IconArrowNarrowRight size={30} className='mr-2' /> 10m² cabin</li>
                                 </ul>
                                 <ul className='text-left list-inside mt-5'>
-                                    <li className='flex text-xl'><IconCheck size={30} className='mr-2' /> 10m² cabin</li>
-                                    <li className='flex text-xl'><IconCheck size={30} className='mr-2' /> 10m² cabin</li>
-                                    <li className='flex text-xl'><IconCheck size={30} className='mr-2' /> 10m² cabin</li>
-                                    <li className='flex text-xl'><IconCheck size={30} className='mr-2' /> 10m² cabin</li>
+                                    <li className='flex text-xl'><IconArrowNarrowRight size={30} className='mr-2' /> 10m² cabin</li>
+                                    <li className='flex text-xl'><IconArrowNarrowRight size={30} className='mr-2' /> 10m² cabin</li>
+                                    <li className='flex text-xl'><IconArrowNarrowRight size={30} className='mr-2' /> 10m² cabin</li>
+                                    <li className='flex text-xl'><IconArrowNarrowRight size={30} className='mr-2' /> 10m² cabin</li>
                                 </ul>
                             </div>
                         </div>

@@ -25,9 +25,9 @@ const NavBar = () => {
 
 
     return (
-        <header className='border-b-2 border-slate-800 sticky top-0 z-10' >
-            <Container size='xl'>
-                <div className="navbar bg-base-100 px-0">
+        <header className='border-b-2 border-slate-800 sticky top-0 z-10 bg-base-100' >
+            <div className='container px-5 mx-auto' >
+                <div className="navbar px-0">
                     <div className="navbar-start">
                         <Link to='/' className="btn btn-ghost normal-case text-2xl px-0 hover:bg-transparent">Turrido</Link>
                     </div>
@@ -114,7 +114,7 @@ const NavBar = () => {
                         }
                     </div>
                 </div>
-            </Container>
+            </div>
         </header >
     )
 };

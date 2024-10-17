@@ -11,13 +11,13 @@ import Contact from '../../shared/contact/Contact';
 const Home = () => {
     return (
 
-        <Container size='xl'>
+        <div className='container mx-auto'>
             <Banner />
             <CardSlide />
             <HomeVideo />
             <Team></Team>
             <Contact />
-        </Container>
+        </div>
     );
 };
 

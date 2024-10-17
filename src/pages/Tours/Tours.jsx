@@ -40,7 +40,7 @@ const Tours = () => {
 
 
     return (
-        <Container size='xl' className='my-24 w-full'>
+        <div className='container my-24 mx-auto '>
             <div className='mb-5 flex justify-between'>
                 <Pagination size="md" color='indigo' siblings={3} page={activePage} onChange={setPage} total={Math.ceil(items.length / itemPerPage)} />
                 <label htmlFor="my-modal-3" className="btn">Filter</label>
@@ -54,13 +54,11 @@ const Tours = () => {
             </div>
             {
                 isLoading === true ? <div className='my-40'><Loading/></div> :
-                    <SimpleGrid
-                        cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 },
-                        { maxWidth: 'md', cols: 2, spacing: 'md' }]}>
+                    <div className='grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-3'>
                         {
                             items[0] ? items.slice(pageVisited, pageVisited + itemPerPage).map((tour) => (
                                 <Link className="card card-compact bg-gray-800 shadow-xl" to={`/tours/${tour.tour_id}`}>
-                                    <figure><img className='h-72' src={tour.img1} alt="Shoes" /></figure>
+                                    <figure><img className='h-96 w-100 aspect-video' src={tour.img1} alt="Shoes" /></figure>
                                     <div className="card-body">
                                         <h1 className="card-title pl-3 text-2xl">{tour.loc}</h1>
                                         <h2 className='pl-3 text-left text-xl'>৳ {tour.price}</h2>
@@ -73,9 +71,9 @@ const Tours = () => {
                                     <h1 className='text-4xl text-center'>Sorry No Data</h1>
                                 </Container>
                         }
-                    </SimpleGrid>
+                    </div>
             }
-        </Container>
+        </div>
     );
 };
 

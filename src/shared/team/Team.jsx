@@ -1,16 +1,15 @@
 import React from 'react';
-import { Container } from '@mantine/core';
-import styles from './Team.module.css'
+
 
 
 const Team = () => {
     return (
-        <section class="bg-white dark:bg-base-100 my-12">
-            <div class="px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+        <section class="container mx-auto bg-white dark:bg-base-100 my-12">
+            <div class="px-4 mx-auto lg:py-16 lg:px-6 ">
                 <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Team</h2>
                 </div>
-                <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+                <div class="grid gap-8 mb-6 lg:mb-16 lg:grid-cols-2 grid-cols-1">
                     <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
                             <img class="h-64 w-64 rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://scontent.fcgp7-1.fna.fbcdn.net/v/t1.6435-9/81906198_1249206198602933_1486611773124509696_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_eui2=AeFlEufUCjIYceE-h01M14UHlejZrIcjEl2V6NmshyMSXYJbE9aQMnc8kr77mrBkIdtoyq8Oichwf9A7kQh7Ki-m&_nc_ohc=oDV2Ts3e_ogAX_yxhL4&_nc_ht=scontent.fcgp7-1.fna&oh=00_AfDYoTEob36fpgs556c3GZK7L3UI6S22eW5LU0o-I_AXxg&oe=6444D749" alt="Bonnie Avatar"/>

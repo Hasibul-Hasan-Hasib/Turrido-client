@@ -5,7 +5,7 @@ import { Button, Container, Grid } from '@mantine/core';
 
 const HomeVideo = () => {
     return (
-        <Container size='xl' className='mt-48 mb-36'>
+        <div className='container mx-auto mt-48 mb-36'>
             <Grid justify='space-between' align='center' >
                 <Grid.Col span={12} md={5} className='flex flex-col items-start'>
                     <h1 className='text-4xl font-bold text-white text-left'>Our Customer Always Come First</h1>
@@ -15,15 +15,15 @@ const HomeVideo = () => {
                         a reputation as a tenacious Broker.</p>
                     <button className='btn btn-secondary text-white'>View Reviews</button>
                 </Grid.Col>
-                <Grid.Col span={12} md={6}>
+                <Grid.Col span={12} md={6} className='aspect-video'>
                     <ReactPlayer
                         width='100%'
-                        height='20rem'
+                        height='100%'
                         url="https://www.youtube.com/watch?v=9gXOBEgHaUM"
                     />
                 </Grid.Col>
             </Grid>
-        </Container>
+        </div>
     );
 };
 

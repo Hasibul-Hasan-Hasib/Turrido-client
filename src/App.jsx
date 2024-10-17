@@ -67,7 +67,7 @@ function App() {
   ])
 
   return (
-    <div data-theme="mytheme" >
+    <div data-theme="night" >
       <AuthProvider>
         <RouterProvider router={router}></RouterProvider>
       </AuthProvider>
