@@ -7,7 +7,7 @@ const Gallery = () => {
                 <div className="aspect-w-3 aspect-h-4 hidden overflow-hidden rounded-lg lg:block">
                     <img src="https://images.pexels.com/photos/26150745/pexels-photo-26150745/free-photo-of-green-grassland-with-trees-in-countryside.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Two each of gray, white, and black shirts laying flat." className="h-full w-full object-cover object-center" />
                 </div>
-                <div className="hidden lg:grid md:grid-cols-1 md:gap-y-8">
+                <div className="hidden lg:grid grid-cols-1 md:gap-y-8">
                     <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg">
                         <img src="https://images.pexels.com/photos/26150745/pexels-photo-26150745/free-photo-of-green-grassland-with-trees-in-countryside.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Model wearing plain black basic tee." className="h-full w-full object-cover object-center" />
                     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import Filters from './Filter';
-import { Container, Pagination, Rating, SimpleGrid } from '@mantine/core';
+import { Container, Pagination, Rating } from '@mantine/core';
 import useData from '../../hooks/useData';
 import Loading from '../../shared/loading/Loading';
 

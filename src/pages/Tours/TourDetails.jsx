@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Grid } from '@mantine/core';
 import useData from '../../hooks/useData';
-import Description from './Description/Description';
+import Description from './Description';
 import Reviews from '../../components/Reviews/Reviews';
 import CardSlide from '../home/CardSlide';
 import Gallery from '../../shared/Gallery/Gallery';
+import Booking from './Booking';
 
 
 
@@ -21,7 +22,7 @@ const TourDetails = () => {
 
 
     return (
-        <div className="container px-5 mx-auto my-12 text-white">
+        <div className="container mx-auto my-12 text-white">
 
 
             {/* title */}
@@ -69,9 +70,7 @@ const TourDetails = () => {
                         <Reviews></Reviews>
                     </Grid.Col>
                     <Grid.Col sm={12} md={4.8}>
-                        <div className='bg-gray-800 rounded-lg p-10 sticky top-32 mb-20'>
-                            <h1 className='text-3xl text-left'>$ 210</h1>
-                        </div>
+                        <Booking/>
                     </Grid.Col>
                 </Grid>
             </div>

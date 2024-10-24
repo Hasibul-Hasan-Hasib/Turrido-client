@@ -108,12 +108,16 @@ const Description = () => {
             <div className='divider'></div>
 
 
+
+
+            {/* Pick up */}
+
             <div tabIndex={0} className="collapse collapse-arrow">
                 <input type="checkbox" />
                 <h1 className='text-2xl collapse-title mb-3'>Pick Up</h1>
                 <div className='collapse-content'>
-                    <input type="text" placeholder="Type here" className="input w-full max-w-xs" />
-                    <button className='btn btn-md btn-primary ml-3'> Submit</button>
+                    <input type="text" placeholder="Type here" className="input w-full max-w-md" />
+                    <button className='btn btn-md btn-primary xl:ml-3 mt-3'> Submit</button>
                     <p className='mt-3'>Submit a pickup place you like </p>
                 </div>
             </div>

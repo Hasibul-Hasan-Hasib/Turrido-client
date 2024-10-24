@@ -5,7 +5,7 @@ import { Button, Container, Grid } from '@mantine/core';
 
 const HomeVideo = () => {
     return (
-        <div className='container mx-auto mt-48 mb-36'>
+        <div className='mt-48 mb-36'>
             <Grid justify='space-between' align='center' >
                 <Grid.Col span={12} md={5} className='flex flex-col items-start'>
                     <h1 className='text-4xl font-bold text-white text-left'>Our Customer Always Come First</h1>
