@@ -2,23 +2,23 @@ import React from "react"
 
 const Blogs = () => {
     return (
-        <section class="container mx-auto bg-white dark:bg-base-100">
-            <div class="mx-auto py-8 px-4 lg:py-16 lg:px-6">
-                <div class="mx-auto mb-8 max-w-screen-sm text-center lg:mb-16">
-                    <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white lg:text-4xl">
+        <section className="container mx-auto dark:bg-base-100">
+            <div className="mx-auto py-8 px-4 lg:py-16 lg:px-6">
+                <div className="mx-auto mb-8 max-w-screen-sm text-center lg:mb-16">
+                    <h2 className="mb-4 text-3xl font-extrabold tracking-tight lg:text-4xl">
                         Our Blog
                     </h2>
-                    <p class="font-light text-gray-500 dark:text-gray-400 sm:text-xl">
+                    <p className="font-light text-gray-500 dark:text-gray-400 sm:text-xl">
                         We use an agile approach to test assumptions and connect
                         with the needs of your audience early and often.
                     </p>
                 </div>
-                <div class="grid gap-8 lg:grid-cols-2">
-                    <article class="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
-                        <div class="mb-5 flex items-center justify-between text-gray-500">
-                            <span class="bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800 inline-flex items-center rounded px-2.5 py-0.5 text-xs font-medium">
+                <div className="grid gap-8 lg:grid-cols-2">
+                    <article className="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
+                        <div className="mb-5 flex items-center justify-between text-gray-500">
+                            <span className="bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800 inline-flex items-center rounded px-2.5 py-0.5 text-xs font-medium">
                                 <svg
-                                    class="mr-1 h-3 w-3"
+                                    className="mr-1 h-3 w-3"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -27,12 +27,12 @@ const Blogs = () => {
                                 </svg>
                                 Tutorial
                             </span>
-                            <span class="text-sm">14 days ago</span>
+                            <span className="text-sm">14 days ago</span>
                         </div>
-                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             <a href="#">Mahamaya Lake</a>
                         </h2>
-                        <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                        <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Neque quae quibusdam molestiae molestias,
                             maxime, cupiditate, fuga enim nulla dicta sed sequi.
@@ -42,24 +42,24 @@ const Blogs = () => {
                             commodi hic cupiditate! Aut beatae rerum obcaecati
                             minus quam dicta a?
                         </p>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center space-x-4">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center space-x-4">
                                 <img
-                                    class="h-7 w-7 rounded-full"
+                                    className="h-7 w-7 rounded-full"
                                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                                     alt="Jese Leos avatar"
                                 />
-                                <span class="font-medium dark:text-white">
+                                <span className="font-medium dark:text-white">
                                     Jese Leos
                                 </span>
                             </div>
                             <a
                                 href="#"
-                                class="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium hover:underline"
+                                className="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium hover:underline"
                             >
                                 Read more
                                 <svg
-                                    class="ml-2 h-4 w-4"
+                                    className="ml-2 h-4 w-4"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -73,11 +73,11 @@ const Blogs = () => {
                             </a>
                         </div>
                     </article>
-                    <article class="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
-                        <div class="mb-5 flex items-center justify-between text-gray-500">
-                            <span class="bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800 inline-flex items-center rounded px-2.5 py-0.5 text-xs font-medium">
+                    <article className="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
+                        <div className="mb-5 flex items-center justify-between text-gray-500">
+                            <span className="bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800 inline-flex items-center rounded px-2.5 py-0.5 text-xs font-medium">
                                 <svg
-                                    class="mr-1 h-3 w-3"
+                                    className="mr-1 h-3 w-3"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -91,12 +91,12 @@ const Blogs = () => {
                                 </svg>
                                 Article
                             </span>
-                            <span class="text-sm">14 days ago</span>
+                            <span className="text-sm">14 days ago</span>
                         </div>
-                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             <a href="#">Bawachara Lake</a>
                         </h2>
-                        <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                        <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Vel eius rerum labore commodi sint! Tenetur
                             consequuntur cum voluptates quos totam fuga
@@ -106,24 +106,24 @@ const Blogs = () => {
                             Dolore quos blanditiis eaque commodi accusantium
                             necessitatibus. Suscipit natus quasi fugit.
                         </p>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center space-x-4">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center space-x-4">
                                 <img
-                                    class="h-7 w-7 rounded-full"
+                                    className="h-7 w-7 rounded-full"
                                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                                     alt="Bonnie Green avatar"
                                 />
-                                <span class="font-medium dark:text-white">
+                                <span className="font-medium dark:text-white">
                                     Bonnie Green
                                 </span>
                             </div>
                             <a
                                 href="#"
-                                class="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium hover:underline"
+                                className="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium hover:underline"
                             >
                                 Read more
                                 <svg
-                                    class="ml-2 h-4 w-4"
+                                    className="ml-2 h-4 w-4"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -137,11 +137,11 @@ const Blogs = () => {
                             </a>
                         </div>
                     </article>
-                    <article class="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
-                        <div class="mb-5 flex items-center justify-between text-gray-500">
-                            <span class="bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800 inline-flex items-center rounded px-2.5 py-0.5 text-xs font-medium">
+                    <article className="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
+                        <div className="mb-5 flex items-center justify-between text-gray-500">
+                            <span className="bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800 inline-flex items-center rounded px-2.5 py-0.5 text-xs font-medium">
                                 <svg
-                                    class="mr-1 h-3 w-3"
+                                    className="mr-1 h-3 w-3"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -155,15 +155,15 @@ const Blogs = () => {
                                 </svg>
                                 Article
                             </span>
-                            <span class="text-sm">14 days ago</span>
+                            <span className="text-sm">14 days ago</span>
                         </div>
-                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             <a href="#">
                                 Napittachara Trail – Kupicatakum, Mithachari and
                                 Bandarkum Jharna
                             </a>
                         </h2>
-                        <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                        <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Aperiam aliquam rerum iusto cum officia vitae,
                             modi quidem fuga officiis suscipit unde consequatur
@@ -173,24 +173,24 @@ const Blogs = () => {
                             dolore doloribus facilis cupiditate sint quos. Quos,
                             at.
                         </p>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center space-x-4">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center space-x-4">
                                 <img
-                                    class="h-7 w-7 rounded-full"
+                                    className="h-7 w-7 rounded-full"
                                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                                     alt="Bonnie Green avatar"
                                 />
-                                <span class="font-medium dark:text-white">
+                                <span className="font-medium dark:text-white">
                                     Bonnie Green
                                 </span>
                             </div>
                             <a
                                 href="#"
-                                class="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium hover:underline"
+                                className="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium hover:underline"
                             >
                                 Read more
                                 <svg
-                                    class="ml-2 h-4 w-4"
+                                    className="ml-2 h-4 w-4"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -204,11 +204,11 @@ const Blogs = () => {
                             </a>
                         </div>
                     </article>
-                    <article class="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
-                        <div class="mb-5 flex items-center justify-between text-gray-500">
-                            <span class="bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800 inline-flex items-center rounded px-2.5 py-0.5 text-xs font-medium">
+                    <article className="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
+                        <div className="mb-5 flex items-center justify-between text-gray-500">
+                            <span className="bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800 inline-flex items-center rounded px-2.5 py-0.5 text-xs font-medium">
                                 <svg
-                                    class="mr-1 h-3 w-3"
+                                    className="mr-1 h-3 w-3"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -217,12 +217,12 @@ const Blogs = () => {
                                 </svg>
                                 Tutorial
                             </span>
-                            <span class="text-sm">14 days ago</span>
+                            <span className="text-sm">14 days ago</span>
                         </div>
-                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             Bandarkum Fountain<a href="#"></a>
                         </h2>
-                        <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                        <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Facere beatae qui ipsa repellat ad nobis sint
                             nihil soluta repellendus ea, nulla consequatur sed
@@ -232,24 +232,24 @@ const Blogs = () => {
                             repellendus, quis voluptatibus! Praesentium sunt
                             dolor nobis odit.
                         </p>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center space-x-4">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center space-x-4">
                                 <img
-                                    class="h-7 w-7 rounded-full"
+                                    className="h-7 w-7 rounded-full"
                                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                                     alt="Jese Leos avatar"
                                 />
-                                <span class="font-medium dark:text-white">
+                                <span className="font-medium dark:text-white">
                                     Jese Leos
                                 </span>
                             </div>
                             <a
                                 href="#"
-                                class="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium hover:underline"
+                                className="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium hover:underline"
                             >
                                 Read more
                                 <svg
-                                    class="ml-2 h-4 w-4"
+                                    className="ml-2 h-4 w-4"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"

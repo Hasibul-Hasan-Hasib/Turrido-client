@@ -10,7 +10,7 @@ import useAuth from '../../hooks/useAuth';
 const Posts = () => {
 
     const { posts } = useData();
-    const { user } = useAuth();
+    // const { user } = useAuth();
     const userPosts = posts.filter(post => post.user_id === 10023)
     const items = posts;
     const [activePage, setPage] = useState(1);

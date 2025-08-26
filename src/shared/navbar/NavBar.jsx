@@ -1,25 +1,24 @@
 import { Link, useNavigate } from "react-router-dom"
 import useAuth from "../../hooks/useAuth"
 import ThemeChanger from "./ThemeChanger"
+import { useDispatch, useSelector } from "react-redux"
+import { saveUser } from "../../features/auth/userAuthSlice"
 
 const NavBar = () => {
-    const { logOut, setUser, user, setIsLoading } = useAuth()
+    const dispatch = useDispatch();
+    const { user } = useSelector(state => state.auth)
+    const { logOut } = useAuth()
     const navigate = useNavigate()
 
     const handleLogout = () => {
         logOut()
             .then(() => {
-                setUser({})
-                setIsLoading(true)
                 navigate("/")
-            })
-            .finally(() => {
-                setIsLoading(false)
             })
     }
 
     return (
-        <header className="sticky top-0 z-10 border-b-2 border-slate-800 bg-base-100 px-5">
+        <header className="sticky top-0 z-10 bg-base-100 px-5 shadow-sm">
             <div className="container mx-auto">
                 <div className="navbar px-0">
                     <div className="navbar-start">
@@ -43,9 +42,6 @@ const NavBar = () => {
                             </li>
                             <li>
                                 <Link to="/contact">Contact</Link>
-                            </li>
-                            <li>
-                                <Link to="/team">Team</Link>
                             </li>
                         </ul>
                     </div>
@@ -92,9 +88,6 @@ const NavBar = () => {
                                         </li>
                                         <li>
                                             <Link to="/contact">Contact</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/team">Team</Link>
                                         </li>
                                         <li>
                                             <a>Settings</a>

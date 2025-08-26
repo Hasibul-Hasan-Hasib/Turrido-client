@@ -34,8 +34,8 @@ const CardSlide = () => {
                 {
                     tours.map((tour) => (
                         <Carousel.Slide key={tour.tour_id}>
-                            <div className="card card-compact bg-gray-800 shadow-xl">
-                                <figure><img className='h-72' src={tour.img1} alt="Shoes" /></figure>
+                            <div className="card card-compact dark:bg-base-300 shadow-xl">
+                                <figure className='h-72'><img className='h-full w-full' src={tour.img1} alt="Shoes" /></figure>
                                 <div className="card-body">
                                     <h1 className="card-title pl-3 text-2xl">{tour.loc}</h1>
                                     <h2 className='pl-3 text-left text-xl'>৳ {tour.price}</h2>

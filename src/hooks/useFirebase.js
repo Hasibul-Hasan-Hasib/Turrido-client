@@ -1,19 +1,17 @@
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../firebase/firebase.init";
 import { GoogleAuthProvider, getAuth, signInWithPopup, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { useDispatch } from "react-redux";
+import { saveErrorMessage,saveError,saveErrorCode, saveUser, setLoading } from "../features/auth/userAuthSlice";
 
 
 initializeAuthentication();
 
 const useFirebase = () => {
-    const [user, setUser] = useState({});
-    const [error, setError] = useState(false);
-    const [errorMessage, setErrorMessage] = useState('');
-    const [isLoading, setIsLoading] = useState(true);
-
+    const dispatch = useDispatch();
     const auth = getAuth();
 
-    
+
     const signInUsingGooglePopup = async () => {
         const googleProvider = new GoogleAuthProvider();
         const result = await signInWithPopup(auth, googleProvider);
@@ -24,18 +22,18 @@ const useFirebase = () => {
 
 
     useEffect(() => {
-        setIsLoading(true);
+        dispatch(setLoading(true))
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             try {
                 if (user) {
-                    setUser(user);
+                    dispatch(saveUser(user))
                 } else {
-                    setUser({});
+                    dispatch(saveUser({}))
                 }
-                setIsLoading(false);
+                dispatch(setLoading(false))
             } catch (error) {
-                setIsLoading(false);
-                setError(error.message);
+                dispatch(setLoading(false))
+                dispatch(saveErrorMessage(error.message))
             }
         });
         return unsubscribe;
@@ -44,27 +42,21 @@ const useFirebase = () => {
 
     const logOut = async () => {
         try {
-            setIsLoading(true);
+            dispatch(setLoading(true))
             await signOut(auth);
-            setUser({});
-            setIsLoading(false);
+            dispatch(saveUser({}));
+            dispatch(setLoading(false))
         } catch (error) {
-            setIsLoading(false);
-            setError(error.message);
+            dispatch(saveError(true))
+            dispatch(saveErrorCode(error.code))
+            dispatch(saveErrorMessage(error.message))
+            dispatch(setLoading(false))
         }
     };
 
     return {
-        user,
         signInUsingGooglePopup,
-        error,
-        errorMessage,
-        setErrorMessage,
-        setError,
-        setUser,
         logOut,
-        isLoading,
-        setIsLoading,
         auth,
         createUserWithEmailAndPassword,
         signInWithEmailAndPassword,

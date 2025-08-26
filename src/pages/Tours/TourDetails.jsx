@@ -22,7 +22,7 @@ const TourDetails = () => {
 
 
     return (
-        <div className="container mx-auto my-12 text-white">
+        <div className="container mx-auto my-12 ">
 
 
             {/* title */}
